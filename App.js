@@ -24,12 +24,13 @@ const style = StyleSheet.create({
   app: {
     paddingTop: StatusBar.currentHeight,
     marginTop: StatusBar.currentHeight,
-    backgroundColor: '#aaaaaa',
+    backgroundColor: '#AAC2FF',
     flexGrow: 1,
     justifyContent: 'space-around',
     alignItems: 'center',
     flexDirection: 'row',
-    padding: 155,    
+   //flexDirection: 'column',
+    padding: 162,    
   },
 
 })
