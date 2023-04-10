@@ -1,20 +1,33 @@
-import { StatusBar } from 'expo-status-bar';
+import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { BtCol1, BtCol2, BtCol3 } from './src/Botao'
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+    <View style={style.App}>
+      <View style={style.Coluna}>
+        <BtCol1 />
+      </View>
+      <View style={style.Coluna}>
+        <BtCol2 />
+      </View>
+      <View style={style.Coluna}>
+        <BtCol3 />
+      </View>
     </View>
-  );
+  )
 }
-
-const styles = StyleSheet.create({
-  container: {
+const style = StyleSheet.create({
+  App: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#AAAAAA",
+    alignItems: "center",
+    justifyContent: "center",
+    flexDirection: "row",
   },
-});
+  Coluna: {
+    flexDirection: "column",
+    margin: (6, 6)
+  },
+}
+)
